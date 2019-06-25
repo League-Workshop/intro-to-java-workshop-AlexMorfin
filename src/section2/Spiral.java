@@ -1,6 +1,10 @@
 package section2;
 
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
 import org.jointheleague.graphical.robot.Robot;
+
+import apple.laf.JRSUIConstants.FrameOnly;
 
 public class Spiral {
 
@@ -20,6 +24,15 @@ public class Spiral {
 			// 2. Turn the robot 360/7 degrees to the right
 		
 			// 8. Set the pen width to i
-			
+			Robot alex= new Robot();
+			alex.changeRobot("http://www.pngmart.com/files/8/Pineapple-PNG-Transparent-Photo.png");
+			alex.penDown();
+			alex.setSpeed(100);
+	for (int i = 0; i < 75; i++) {
+	alex.setRandomPenColor();
+	alex.move(5*i);
+	alex.turn(360/7);
+	alex.setPenWidth(i);
+	}
 	}
 }
