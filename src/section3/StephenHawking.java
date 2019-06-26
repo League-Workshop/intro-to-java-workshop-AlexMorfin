@@ -13,7 +13,10 @@ public class StephenHawking {
 	// 2. ask the user for a sentence
 	
 	// 3. call the speak method below and send it the sentence
-
+public static void main(String[] args) {
+String Sentence=JOptionPane.showInputDialog("What Is A sentence You Would Like To Be Said?");
+speak(Sentence);
+}
 	
 
 	
