@@ -47,13 +47,25 @@ System.out.println("+mouseColor+");
 		//7. Create an int variable that holds the background color. 
 int backgroundColor=(238,130,238);		
 		//8. If the mouse falls off the path (if it is on the background)
-	
+if(mouseTouch(backgroundColor)){ 
 				// call the scare method
 		
 		//13. If the mouse is on the end color
-if(mouse)		
-				// pop up a message to tell them they won
+if(mouseTouch(255,255,0)) { JOptionPane.showMessageDialog(null, "You Have Beaten The Maze");		
+}
+}
+// pop up a message to tell them they won
 		
+	}
+
+	private boolean mouseTouch(int i, int j, int k) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	private boolean mouseTouch(int backgroundColor) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	private void scare() {
